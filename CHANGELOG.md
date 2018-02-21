@@ -919,11 +919,11 @@ conversion so that they will match with strict conversion.
 
 The programmatic API for `ngModelOptions` has changed. You must now read options
 via the `ngModelController.$options.getOption(name)` method, rather than accessing the
-option directly as a property of the `ngModelContoller.$options` object. This does not
+option directly as a property of the `ngModelController.$options` object. This does not
 affect the usage in templates and only affects custom directives that might have been
 reading options for their own purposes.
 
-One benefit of these changes, though, is that the `ngModelControler.$options` property
+One benefit of these changes, though, is that the `ngModelController.$options` property
 is now guaranteed to be defined so there is no need to check before accessing.
 
 So, previously:
